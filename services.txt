@@ -1,0 +1,44 @@
+LOGIN:
+http://localhost:8080/rest/model/atg/userprofiling/ProfileActor/login?login=test@tcs.com&password=cvs1234
+
+ADD TO CART:
+http://localhost:8080/rest/model/atg/commerce/order/purchase/CartModifierActor/addItemToOrder?catalogRefIds=sku60303&productId=prod60022&quantity=2&pushSite=200001
+
+Get Shipping Group:
+
+http://localhost:8080/rest/model//atg/commerce/order/purchase/ShippingGroupActor/getShippingGroups?createOneInfoPerUnit=true&init=true&shippingGroupTypes=hardgoodShippingGroup
+
+Add new ship Address:
+
+http://localhost:8080/rest/model/atg/commerce/order/purchase/ShippingGroupActor/shipToNewAddress?newShipToAddressName=Test&saveShippingAddress=true&firstName=Radha&lastName=A&phoneNumber=1234567899&address1=NewStreet&address2=minneapolis&postalCode=02895&city=Woonsocket&state=RI&country=United+States
+
+
+Shipping Method:
+http://localhost:8080/rest/model/atg/commerce/order/purchase/ShippingGroupActor/setShippingMethod?shippingMethod=Ground
+
+Add Paymment Details:
+
+http://localhost:8080/rest/model/atg/commerce/order/purchase/CreateCreditCardActor/newCreditCard?creditCardType=visa&creditCardNumber=4111111111111111&expirationMonth=08&expirationYear=2020&firstName=Radha&address1=New+Street&address2=minneapolis&city=woonsocket&state=RI&country=UnitedStates&postalCode=02895&phoneNumber=1234567899&lastName=A
+
+
+Commit:
+
+http://localhost:8080/rest/model/atg/commerce/order/purchase/CommitOrderActor/commitOrder?creditCardVerificationNumber=111
+
+
+Custom Services:
+Upsell
+http://localhost:8080/rest/model/atg/commerce/catalog/ProductCatalogActor/getUpsellForProduct?productId=xprod2067
+
+Cross sell
+http://localhost:8080/rest/model/atg/commerce/catalog/ProductCatalogActor/getCrossSellForProduct?productId=prod20008
+
+Recently Viewed products
+http://localhost:8080/rest/model/atg/commerce/catalog/ProductCatalogActor/getRecentlyViewedProducts
+
+
+
+
+
+
+
